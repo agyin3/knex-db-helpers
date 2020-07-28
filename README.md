@@ -26,7 +26,7 @@ const db = new KnexHelpers(connection, 'tableName')
 
 * **All methods return a Promise** 
 
-### `find`
+### `find(selectConfig='*')`
 
 Returns all records in the database
 
@@ -47,7 +47,7 @@ const select = ['users.id', 'users.username', 'users.email', 'users.full_name as
 db.find(select)
 ```
 
-### `findBy`
+### `findBy(filter, selectConfig='*')`
 
 Returns all records that match provided filter
 
@@ -64,7 +64,7 @@ Returns all records that match provided filter
 db.findBy({ city: req.body.city })
 ```
 
-### `findById`
+### `findById(id, selectConfig='*', whereConfig='id')`
 
 Returns the first instance that matches provided id
 
@@ -91,7 +91,7 @@ const where = 'users.id'
 db.findById(id, select, where).join("locations", "locations.id", "users.location_id")
 ```
 
-### `add`
+### `add(info)`
 
 Adds a new instance to the database and returns the created instance upon success
 
@@ -108,7 +108,7 @@ const { username, password } = req.body
 db.add({ username, password })
 ```
 
-### `update`
+### `update(changes, filter)`
 
 Updates an instance in the database and returns updated data upon success
 
@@ -125,7 +125,7 @@ Updates an instance in the database and returns updated data upon success
 db.update(req.body, { id: 5 })
 ```
 
-### `remove`
+### `remove(filter)`
 
 Deletes an instance from the database and returns the number of rows removed
 
