@@ -1,4 +1,4 @@
-# knex-db-helpers
+# knex-db-helpers ![Github Repo Size](https://img.shields.io/github/repo-size/agyin3/knex-db-helpers)
 
 Knex DB Helper is an npm package that makes accessing your SQL database a breeze. Knex DB Helpers comes with 5 pre-built methods with the ability to easily build more complex queries as needed
 
