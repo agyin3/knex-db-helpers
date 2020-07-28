@@ -1,0 +1,28 @@
+{
+  "name": "knex-db-helpers",
+  "version": "1.0.0",
+  "description": "Knex DB Helper is an npm package that makes accessing your SQL database a breeze. Knex DB Helpers comes with 5 pre-built methods with the ability to easily build more complex queries as needed",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agyin3/knex-db-helpers.git"
+  },
+  "keywords": [
+    "knex db helpers",
+    "knex",
+    "postgres",
+    "sql",
+    "sqlite",
+    "query",
+    "queries"
+  ],
+  "author": "Buddy Agyin <buddy@buddyagyin.blog> (https://www.buddyagyin.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agyin3/knex-db-helpers/issues"
+  },
+  "homepage": "https://github.com/agyin3/knex-db-helpers#readme"
+}
