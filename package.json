@@ -1,6 +1,6 @@
 {
   "name": "knex-db-helpers",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Knex DB Helper is an npm package that makes accessing your SQL database a breeze. Knex DB Helpers comes with 5 pre-built methods with the ability to easily build more complex queries as needed",
   "main": "index.js",
   "scripts": {
