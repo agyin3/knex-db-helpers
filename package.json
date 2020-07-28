@@ -19,7 +19,7 @@
     "query",
     "queries"
   ],
-  "author": "Buddy Agyin <buddy@buddyagyin.blog> (https://www.buddyagyin.com)",
+  "author": "Buddy Agyin <agyin3@gmail.com> (https://www.buddyagyin.com)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/agyin3/knex-db-helpers/issues"
