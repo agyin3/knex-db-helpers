@@ -33,9 +33,9 @@ class KnexHelpers {
       });
   }
 
-  update(changes, id) {
+  update(changes, filter) {
     return this.db(this.table)
-      .where("id", id)
+      .where(filter)
       .update(changes)
       .returning("id")
       .then((res) => {
@@ -46,8 +46,8 @@ class KnexHelpers {
       });
   }
 
-  remove(id) {
-    return this.db(this.table).where("id", id).del();
+  remove(filter) {
+    return this.db(this.table).where(filter).del();
   }
 }
 
